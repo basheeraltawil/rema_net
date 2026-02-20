@@ -20,10 +20,7 @@ For each position $pos$ and dimension $i$:
 $$ PE_{(pos, 2i)} = \sin\left(\frac{pos}{10000^{2i/d_{model}}}\right) $$
 $$ PE_{(pos, 2i+1)} = \cos\left(\frac{pos}{10000^{2i/d_{model}}}\right) $$
 
-**Positional Encoding ($PE$):**
-For each position $pos$ and dimension $i$:
-$$ PE_{(pos, 2i)} = \sin\left(\frac{pos}{10000^{2i/d_{\text{model}}}}\right) $$
-$$ PE_{(pos, 2i+1)} = \cos\left(\frac{pos}{10000^{2i/d_{\text{model}}}}\right) $$
+
 
 
 **Self-Attention Mechanism:**
