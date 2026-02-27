@@ -55,19 +55,18 @@ During **inference**, predictions from all four streams are **averaged** for the
 ## 🛠️ Prerequisites
 
 ```bash
-# Core
-pip install torch torchvision
-pip install opencv-python numpy pandas scikit-learn matplotlib seaborn
+# 1. Create a conda environment (recommended)
+conda create -n cuda_venv python=3.10 -y
+conda activate cuda_venv
 
-# Caption models (downloaded automatically on first run)
-pip install transformers
+# 2. Install PyTorch with CUDA 12.4
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
 
-# Experiment tracking
-pip install wandb
-
-# (Optional) GFLOPs counter
-pip install thop
+# 3. Install all other dependencies
+pip install -r requirements.txt
 ```
+
+> **CPU-only?** Skip step 2 — `pip install -r requirements.txt` will install a CPU-only PyTorch.
 
 ---
 

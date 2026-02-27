@@ -1,0 +1,43 @@
+# ============================================================
+# REMA-Net — Python Dependencies
+# ============================================================
+# Install with:  pip install -r requirements.txt
+#
+# For PyTorch with CUDA 12.4 (as used in development):
+#   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+# ============================================================
+
+# --- Deep Learning ---
+torch==2.6.0
+torchvision==0.21.0
+torchaudio==2.6.0
+
+# --- Vision ---
+opencv-python==4.13.0.92
+pillow==12.1.1
+
+# --- Data & Science ---
+numpy==2.2.6
+pandas==2.3.3
+scikit-learn==1.7.2
+scipy==1.15.3
+
+# --- Visualisation ---
+matplotlib==3.10.8
+seaborn==0.13.2
+
+# --- NLP / Captioning ---
+transformers==4.39.3
+tokenizers==0.15.2
+huggingface-hub==0.23.5
+safetensors==0.7.0
+
+# --- Experiment Tracking ---
+wandb==0.25.0
+
+# --- Utilities ---
+tqdm==4.67.3
+PyYAML==6.0.3
+
+# --- Optional (GFLOPs counter) ---
+# thop
